@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+:root{
+    /* ## Colors
+    ### Primary */
+    --active-input-border:hsl(249, 99%, 64%);
+    --active-input-border2: hsl(278, 94%, 30%);
+    --input-errors: hsl(0, 100%, 66%);
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 375px;
+    height: 100%;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.788);
+    font-size: 18px;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    padding: 5rem 0 0 0;
+}
+.wrapper {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-images {
+    background-image: linear-gradient(90deg, hsl(278, 68%, 11%), hsl(278, 94%, 30%),  hsl(278, 68%, 11%));
+    color: var(--Light-grayish-violet);
+    height: 15rem;
+}
+.card-images img {
+    max-width: 100%;
+    position: relative;
+}
+.back {
+    position: relative;
+}
+.front {
+    position: relative;
+}
+.img-back {
+    position: absolute;
+    width: 80%;
+    top: 2rem;
+    right: -3.75rem;
+}
+.img-front {
+    position: absolute;
+    width: 80%;
+    top: -2.8rem;
+    left: 1rem;
+}
+.Img-CVC{
+    position: absolute;
+    top: 62%;
+    right: 15%;
+    font-size: 12px;
+}
+.Img-Number, .Img-Name, .Img-MMYY, .Img-Logo {
+    position: absolute;
+    font-size: 12px;
+}
+.Img-Logo{
+    width: 3.5rem;
+    top: -10rem;
+    right: 72.5%;
+}
+.Img-Number{
+    width: 69%;
+    font-size: 18px;
+    top: 20%;
+    right: 22%;
+    letter-spacing: 3px;
+}
+.Img-Name, .Img-MMYY {
+    top: 50%;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+.Img-Name {
+    width: 50%;
+    right: 40%;
+}
+.Img-MMYY {
+    right: 22%;
+}
+.user-info-input{
+    background-color: var(--White);
+    padding: 6rem 1.5rem 0 1.5rem;
+    color: var(--Very-dark-violet);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: inherit;
+    font-size: 13px;
+
+}
+input {
+    border: solid 1px var(--Light-grayish-violet);
+    color: var(--Light-grayish-violet);
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    margin: 0.5rem 0 1.5rem 0;
+}
+.name, .card, .otherinfo {
+    margin: 0;
+}
+.name input, .card input {
+    width: 100%;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+}
+input::placeholder {
+    color: var(--Dark-grayish-violet);
+    opacity: 50%;
+}
+ul {
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+}
+.otherinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Card-Month, .Card-Year{
+    width: 90%;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+}
+.Card-CVC {
+    width: 100%;
+}
+.exp-date {
+    width: 100%;
+}
+button {
+    background-color:  hsl(278, 68%, 11%);
+    color: var(--White);
+    width: 100%;
+    height: 3.5rem;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 3rem;
+}
+.errormsgname, .errormsgcard, .errormsgMMYY, .errormsgCVC {
+    position: relative;
+    top: -1rem;
+    color: var(--input-errors);
+    font-size: 10px;
+    text-transform: capitalize;
+}
+.complete {
+    width: 100%;
+    background-color: var(--White);
+    padding: 6rem 1.5rem 3rem 1.5rem;
+    color: var(--Very-dark-violet);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: inherit;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+.complete h1{
+    padding: 2rem 0 1rem 0;
+    letter-spacing: 5px;
+    font-weight: inherit;
+}
+.complete p {
+    text-transform: initial;
+    color: var(--Dark-grayish-violet);
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0 0 3rem 0;
+}
+    .attribution { 
+        position: relative;
+        top: 5rem;
+        font-size: 11px; 
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
